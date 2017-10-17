@@ -9,6 +9,10 @@ namespace MadLibs
     class Word
     {
         int wordType;
+        Dictionary<int, string> wordTypes = new Dictionary<int, string>()
+        {
+            // declare kvp for all the types of input
+        };
         string text;
 
 
@@ -16,5 +20,6 @@ namespace MadLibs
         {
             this.wordType = WordType;
         }
+
     }
 }
