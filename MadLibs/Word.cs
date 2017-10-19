@@ -8,11 +8,21 @@ namespace MadLibs
 {
     class Word
     {
-        int wordType;
-        Dictionary<int, string> wordTypes = new Dictionary<int, string>()
+     
+        Dictionary<int, string> wordTypes = new Dictionary<int, string>
         {
-            // declare kvp for all the types of input
+            {1, "name" },
+            {2, "person" },
+            {3, "place" },
+            {4, "thing" },
+            {5, "verb"},
+            {6, "adjective"},
+            {7, "topic" },
+            {8, "frequency" },
+            {9, "pronoun" }
         };
+       
+        int wordType;
         string text;
 
 
