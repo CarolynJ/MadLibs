@@ -9,56 +9,35 @@ namespace MadLibs
 {
     class Story
     {
-        string title;
-        string storyText;
-        List<Word> wordsNeeded;
+        //string title;
+        //string storyText;
+        //List<Word> wordsNeeded;
 
-        
-
-        public Story()
+        public void StoryBuilder()
         {
-            string filename = "StoryFrame1.txt";
-            string directory = Environment.CurrentDirectory;
-            string filePath = Path.Combine(directory, filename);
+            String inputText;
+            List<string> inputWords;
 
-            List<Word> words = new List<Word>();
-
-           // (not sure if this is useful here or not)  StringBuilder sb = new StringBuilder();
-
-            // will read in text from text file and call method to prepare the word list
-            try
-            {
-                using (StreamReader sr = new StreamReader(filePath))
-                {
-                    while (!sr.EndOfStream)
-                    {
-                       string input = (sr.ReadLine());
-                    }
-                }
-            }
-            catch (IOException e)
-            {
-                Console.WriteLine("An error occurred while reading the file");
-                Console.WriteLine(e.Message);
-            }
-               
+           // This method will take the text read in from the file and replace the words in () with the words the user input
+           // and then display the new story.
         }
-        private static List<Word> PrepareWordList(string input)
-        {
-          
-            string[] splits = input.Split('{');
-            // I'm not sure what will end up in the array. I want to be able to evaluate the following letters
+        //private static List<Word> PrepareWordList(string input)
+        //{
 
-            foreach(string wordKind in splits)
-            {
-                // I would really like this loop to compare splits results to my dictionary of word types
-                if((wordKind[0] == 'n') && (wordKind[1] == 'a'))
-                {
-                    words.Add(new Word(1));
-                }
-            }
+        //    List<Word> words = new List<Word>();
+        //    string[] splits = input.Split('{');
+        //    // I'm not sure what will end up in the array. I want to be able to evaluate the following letters
 
-            return words;
-        }
+        //    foreach(string wordKind in splits)
+        //    {
+        //        // I would really like this loop to compare splits results to my dictionary of word types
+        //        if((wordKind[0] == 'n') && (wordKind[1] == 'a'))
+        //        {
+        //            words.Add(new Word("name"));
+        //        }
+        //    }
+
+        //    return words;
+        //}
     }
 }

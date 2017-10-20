@@ -21,12 +21,11 @@ namespace MadLibs
             {8, "frequency" },
             {9, "pronoun" }
         };
-       
-        int wordType;
-        string text;
+        
+        string wordType;
+        string inputText;
 
-
-        public Word(int WordType)
+        public Word(string WordType)
         {
             this.wordType = WordType;
         }

@@ -8,33 +8,19 @@ namespace MadLibs
 {
     class InputWordsCI
     {
-        List<Word> words = new List<Word>();
-        public void PromptWordInput()
+        // List<Word> words = new List<Word>();
+        List<string> words = new List<string>();
+        List<string> inputWords = new List<string>();
+
+        public List<string> PromptWordInput()
         {
-            foreach(Word wordNeeded in words)
+            foreach(string wordNeeded in words)
             {
-               // if (wordNeeded.WordType = 1)
-                {
-                    Console.WriteLine("Please enter a noun:");
-                    string newWord = Console.ReadLine();
-                   // words.Add(newword(1));
-
-                }
-                // if (wordNeeded.WordType = 20)
-                {
-                    Console.WriteLine("Please enter a verb in the past tense:");
-                    string newWord = Console.ReadLine();
-                    // words.Add(newword(1));
-
-                }
-                // if (wordNeeded.WordType = 20)
-                {
-                    Console.WriteLine("Please enter a verb in the past tense:");
-                    string newWord = Console.ReadLine();
-                    // words.Add(newword(1));
-
-                }
+               Console.WriteLine("Please enter a " + wordNeeded + ":");
+               string newWord = Console.ReadLine();
+               inputWords.Add(newWord);
             }
+            return inputWords;
         }
         
     }
