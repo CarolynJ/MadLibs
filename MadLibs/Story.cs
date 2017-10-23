@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MadLibs
 {
-    class Story
+    public class Story
     {
         //string title;
         //string storyText;

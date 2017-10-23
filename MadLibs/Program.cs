@@ -11,6 +11,12 @@ namespace MadLibs
     {
         static void Main()
         {
+            StoryReader newStory = new StoryReader();
+            newStory.FileReader();
+
+            List<string> wordsNeeded = new List<string>();
+            InputWordsCI requestWords = new InputWordsCI();
+            requestWords.PromptWordInput(wordsNeeded);
 
             // call story reader but should it be a method inside of a story object?  
         }
