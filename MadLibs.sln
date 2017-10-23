@@ -5,6 +5,11 @@ VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MadLibs", "MadLibs\MadLibs.csproj", "{DE5A37B7-1423-42CA-A47B-1649CEA587F4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24DEA4D1-80C9-49DA-A38B-6B1C37F057DE}"
+	ProjectSection(SolutionItems) = preProject
+		MadLibs\StoryFrame1.txt = MadLibs\StoryFrame1.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
