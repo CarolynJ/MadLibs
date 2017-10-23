@@ -13,31 +13,35 @@ namespace MadLibs
         //string storyText;
         //List<Word> wordsNeeded;
 
-        public void StoryBuilder()
+        public List<string> StoryBuilder(string inputText, List<string> userInput)
         {
-            String inputText;
-            List<string> inputWords;
+            List<string> outputStory = new List<string>();
 
-           // This method will take the text read in from the file and replace the words in () with the words the user input
-           // and then display the new story.
+            string[] pieces = inputText.Split(' '); // Splits story text intp words so words in () can be replaced with userInput
+
+            foreach (string word in pieces)
+            {
+                if ((word.StartsWith("(")) && (word.EndsWith(")")))
+                {
+                    for (int i = 0; i <= userInput.Count - 1; i++)
+                    {
+
+                        outputStory.Add(userInput[i]);
+
+                    }
+                }
+                else
+                {
+                    outputStory.Add(word);
+                }
+            }
+            Console.WriteLine("Here is the story you created:");
+            for (int i = 0; i < outputStory.Count; i++)
+            {
+                Console.Write(outputStory[i] + " ");
+            }
+            string wait = Console.ReadLine();
+            return outputStory;
         }
-        //private static List<Word> PrepareWordList(string input)
-        //{
-
-        //    List<Word> words = new List<Word>();
-        //    string[] splits = input.Split('{');
-        //    // I'm not sure what will end up in the array. I want to be able to evaluate the following letters
-
-        //    foreach(string wordKind in splits)
-        //    {
-        //        // I would really like this loop to compare splits results to my dictionary of word types
-        //        if((wordKind[0] == 'n') && (wordKind[1] == 'a'))
-        //        {
-        //            words.Add(new Word("name"));
-        //        }
-        //    }
-
-        //    return words;
-        //}
     }
 }

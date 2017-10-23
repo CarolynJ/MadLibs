@@ -14,11 +14,10 @@ namespace MadLibs
             StoryReader newStory = new StoryReader();
             newStory.FileReader();
 
-            List<string> wordsNeeded = new List<string>();
-            InputWordsCI requestWords = new InputWordsCI();
-            requestWords.PromptWordInput(wordsNeeded);
+            
+            string wait = Console.ReadLine();
 
-            // call story reader but should it be a method inside of a story object?  
+            
         }
     }
 
