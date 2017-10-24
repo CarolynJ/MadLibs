@@ -24,10 +24,10 @@ namespace MadLibs
 
             }
             // this loop is to test that input is being saved. It should be deleted wh
-            for (int i = 0; i < userInput.Count; i++)
-            {
-                Console.WriteLine(userInput[i]);
-            }
+            //for (int i = 0; i < userInput.Count; i++)
+            //{
+            //    Console.WriteLine(userInput[i]);
+            //}
 
             Story newStory = new Story();
             newStory.StoryBuilder(storyInput, wordReplacements);

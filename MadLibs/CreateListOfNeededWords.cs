@@ -27,10 +27,10 @@ namespace MadLibs
                     wordsNeeded.Add(wordType);
                 }
             }
-            for (int i = 0; i < wordsNeeded.Count; i++)
-            {
-                Console.WriteLine(wordsNeeded[i]);
-            }
+            //for (int i = 0; i < wordsNeeded.Count; i++)
+            //{
+            //    Console.WriteLine(wordsNeeded[i]);
+            //}
             InputWordsCI requestWords = new InputWordsCI();
             requestWords.PromptWordInput(storyInput, wordsNeeded);
             return wordsNeeded;

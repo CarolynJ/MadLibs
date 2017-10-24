@@ -13,29 +13,37 @@ namespace MadLibs
         {
             string storyInput = "";
 
-            //string testStory = "New Text Document.txt";
-            //string longerTest = "StoryFrame1.txt";
-            //string filename;
+            string testStory = "ShortTest.txt";
+            string longerTest = "Test.txt";
+            string Spooky = "SpookyMadLib.txt";
+            string filename;
 
-            //(this commented out code is there for when there are multiple input files and  it lests the user select a story or input file)
-            //Console.WriteLine("Which story would you like to use? enter 1 for: " + testStory + " enter 2 for:" + longerTest + " ?");
-            //string storyChoice = Console.ReadLine();
-            //if (storyChoice == "1")
-            //{
-            //    filename = "StoryFrame1.txt";
-            //}
-            //else if (storyChoice == "2")
-            //{
-            //    filename = "New Text Document.txt";
-            //}
-            //else
-            //{
-            //    filename = "New Text Document.txt";
-            //}
-        
+            Console.WriteLine("Which story would you like to use?");
+            Console.WriteLine("For a short test: enter 1");
+            Console.WriteLine("For a longer test: enter 2");
+            Console.WriteLine("For a Spooky MadLib: enter 3");
+            
+            string storyChoice = Console.ReadLine();
+            if (storyChoice == "1")
+            {
+                filename = "ShortTest.txt";
+            }
+            else if (storyChoice == "2")
+            {
+                filename = "Test.txt";
+            }
+            else if (storyChoice == "3")
+            {
+                filename = "SpookyMadLib.txt";
+            }
+            else
+            {
+                filename = "Test.txt";
+            }
+
             try
             {
-                string filename = "New Text Document.txt";
+                //string filename = "SpookyMadLib.txt";
                 string directory = Environment.CurrentDirectory;
                 string filePath = Path.Combine(directory, filename);
 
@@ -45,7 +53,7 @@ namespace MadLibs
                     {
                         string input = (sr.ReadLine());
                         storyInput += input;
-                        Console.WriteLine(input);
+                       // Console.WriteLine(input);
                     }
                 }
             }
