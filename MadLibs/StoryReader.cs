@@ -12,11 +12,30 @@ namespace MadLibs
         public string FileReader()
         {
             string storyInput = "";
-            // (not sure if this is useful here or not)  StringBuilder sb = new StringBuilder();
 
+            //string testStory = "New Text Document.txt";
+            //string longerTest = "StoryFrame1.txt";
+            //string filename;
+
+            //(this commented out code is there for when there are multiple input files and  it lests the user select a story or input file)
+            //Console.WriteLine("Which story would you like to use? enter 1 for: " + testStory + " enter 2 for:" + longerTest + " ?");
+            //string storyChoice = Console.ReadLine();
+            //if (storyChoice == "1")
+            //{
+            //    filename = "StoryFrame1.txt";
+            //}
+            //else if (storyChoice == "2")
+            //{
+            //    filename = "New Text Document.txt";
+            //}
+            //else
+            //{
+            //    filename = "New Text Document.txt";
+            //}
+        
             try
             {
-                string filename = "StoryFrame1.txt";
+                string filename = "New Text Document.txt";
                 string directory = Environment.CurrentDirectory;
                 string filePath = Path.Combine(directory, filename);
 

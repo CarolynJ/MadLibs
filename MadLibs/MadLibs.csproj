@@ -54,6 +54,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="New Text Document.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="StoryFrame1.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
