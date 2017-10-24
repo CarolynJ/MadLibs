@@ -19,17 +19,15 @@ namespace MadLibs
         public string StoryBuilder (string inputText, Dictionary<string, string> wordReplacement)
         {
            // List<string> outputStory = new List<string>();
-            string outputStory = "";
+            string outputStory = inputText;
             string cleanCompleteStory = "";
             foreach(KeyValuePair<string,string> kvp in wordReplacement)
             {
-                
-                 outputStory = inputText.Replace(kvp.Key, kvp.Value);
-                
-                
+  
+                 outputStory = outputStory.Replace(kvp.Key, kvp.Value);  
             }
-
-            cleanCompleteStory = Regex.Replace(outputStory, "()", "");
+            
+            cleanCompleteStory = outputStory.Replace("(", "").Replace(")", "");
 
             Console.WriteLine("Here is the story you created:");
             Console.WriteLine(cleanCompleteStory);
