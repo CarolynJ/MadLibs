@@ -10,14 +10,14 @@ namespace MadLibs
 {
     public class Story
     {
-        public string StoryBuilder (string inputText, Dictionary<string, string> wordReplacement)
+        public string StoryBuilder (string inputText, Dictionary<string, Word> wordsNeeded)
         {
            
             string outputStory = inputText;
             string cleanCompleteStory = "";
-            foreach(KeyValuePair<string,string> kvp in wordReplacement)
+            foreach(KeyValuePair<string, Word> kvp in wordsNeeded)
             {
-                 outputStory = outputStory.Replace(kvp.Key, kvp.Value);  
+                 outputStory = outputStory.Replace(kvp.Key, kvp.Value.Answer);  
             }
             
             cleanCompleteStory = outputStory.Replace("(", "").Replace(")", "");

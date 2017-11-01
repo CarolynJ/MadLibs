@@ -9,7 +9,7 @@ namespace MadLibs
 {
     public class StoryReader
     {
-        public string FileReader()
+        public void FileReader()
         {
             string storyInput = "";
 
@@ -43,7 +43,7 @@ namespace MadLibs
 
             try
             {
-                //string filename = "SpookyMadLib.txt";
+                
                 string directory = Environment.CurrentDirectory;
                 string filePath = Path.Combine(directory, filename);
 
@@ -53,7 +53,6 @@ namespace MadLibs
                     {
                         string input = (sr.ReadLine());
                         storyInput += input;
-                       // Console.WriteLine(input);
                     }
                 }
             }
@@ -63,9 +62,13 @@ namespace MadLibs
                 Console.WriteLine(e.Message);
             }
             CreateListOfNeededWords wordList = new CreateListOfNeededWords();
-            wordList.WordsNeeded(storyInput);
-            return storyInput;
-            
+            Dictionary<string, Word> wordsNeeded =  wordList.WordsNeeded(storyInput);
+
+            InputWordsCI requestWords = new InputWordsCI();
+            wordsNeeded = requestWords.PromptWordInput(wordsNeeded);
+
+            Story newStory = new Story();
+            newStory.StoryBuilder(storyInput, wordsNeeded);
 
         }
         

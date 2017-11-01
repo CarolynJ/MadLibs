@@ -8,32 +8,39 @@ namespace MadLibs
 {
     class CreateListOfNeededWords
     {
-        public List<string> WordsNeeded(string storyInput)
+        public Dictionary<string, Word> WordsNeeded(string storyInput)
         {
-            //List<Word> words = new List<Word>();
-            List<string> wordsNeeded = new List<string>();
+
+            Dictionary<string, Word> wordsNeeded = new Dictionary<string, Word>();
 
             string[] pieces = storyInput.Split(' ');
             foreach (string word in pieces)
             {
                 if ((word.StartsWith("(")) && (word.EndsWith(")")))
                 {
-                    string wordType = word.Substring(1, word.Length - 2);
-                    wordsNeeded.Add(wordType);
+                    string parsePrompt = word.Substring(1, word.Length - 2);
+                    ParsePrompt(parsePrompt, wordsNeeded);
                 }
                 else if (word.StartsWith("("))
                 {
-                    string wordType = word.Substring(1, word.Length - 3);
-                    wordsNeeded.Add(wordType);
+                    string parsePrompt = word.Substring(1, word.Length - 3);
+                    ParsePrompt(parsePrompt, wordsNeeded);
                 }
             }
-            //for (int i = 0; i < wordsNeeded.Count; i++)
-            //{
-            //    Console.WriteLine(wordsNeeded[i]);
-            //}
-            InputWordsCI requestWords = new InputWordsCI();
-            requestWords.PromptWordInput(storyInput, wordsNeeded);
+
+
             return wordsNeeded;
         }
+
+        private void ParsePrompt (string parsePrompt, Dictionary<string, Word> wordsNeeded)
+        {
+            string parsePromptClean = parsePrompt.Replace("(", "").Replace(")", "");
+            string[] sections = parsePromptClean.Split(':');
+            Word w = new Word();
+            w.Answer = "";
+            w.Prompt = sections[1];
+            wordsNeeded.Add(parsePrompt, w);
+        }
+
     }
 }

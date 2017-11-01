@@ -1,6 +1,6 @@
-Spooky! (persons) and (characters) come out tonight! It's (holiday) and they are ready to (verb). 
-So watch your (noun) when (verb2) or treating, they want your (fruits)!  
-(Characters1) like pumpkins and (persons1) like (vegetables).
-While (verb/ing) on doors for all your (pluralNoun), watch the house down the (location).
-It's scary with (animal) webs and broken (noun2), (exclamation), It's where the (noun3) and (noun4) live! 
-(verb3) home and hide those (vegetables2)!
+Spooky! (n1:people) and (n2:characters) come out tonight! It's (n3:holiday) and they are ready to (v1:verb). 
+So watch your (n4:noun) when (v2:verb) or treating, they want your (n5:fruits)!  
+(n6:Characters) like pumpkins and (n7:persons) like (n8:vegetables).
+While (v3:verb/ing) on doors for all your (n9:pluralNoun), watch the house down the (n10:location).
+It's scary with (n11:animal) webs and broken (n12:noun), (e1:exclamation), It's where the (n13:thing) and (n14:person) live! 
+(v4:verb) home and hide those (n15:vegetables)!
