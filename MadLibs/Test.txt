@@ -1,2 +1,2 @@
-This is a story about (topic) and should be read (adjective) because it is just for entertainment. Once upon a time there was a (person), named (name) who (verb) (frequency). 
-(pronoun) traveled far and wide to find (noun). This was important because (name -repeated) couldn't (verb) without it.
+This is a story about (1n:topic) and should be read (2:adjective) because it is just for entertainment. Once upon a time there was a (3:person), named (4Cap:name) who (5:verb) (6:frequency). 
+(7cap:pronoun) traveled far and wide to find (8:noun). This was important because (9Cap:name) couldn't (10:verb) without it.

@@ -17,6 +17,10 @@ namespace MadLibs
             string cleanCompleteStory = "";
             foreach(KeyValuePair<string, Word> kvp in wordsNeeded)
             {
+                if (kvp.Key.ToLower().Contains("cap"))
+                {
+                    kvp.Value.Answer = kvp.Value.Answer.Substring(0, 1).ToUpper() + kvp.Value.Answer.Substring(1);
+                }
                  outputStory = outputStory.Replace(kvp.Key, kvp.Value.Answer);  
             }
             

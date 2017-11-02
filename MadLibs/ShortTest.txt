@@ -1,1 +1,1 @@
-Help (n1:name) test this story about (n2:topic).  Have a nice (n3:holiday) celebration.
+Help (1nCap:name) test this story about (2n:topic).  Have a nice (3nCap:holiday) celebration.
