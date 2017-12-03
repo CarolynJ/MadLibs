@@ -16,29 +16,35 @@ namespace MadLibs
             string testStory = "ShortTest.txt";
             string longerTest = "Test.txt";
             string Spooky = "SpookyMadLib.txt";
+            string Open = "OpeningLines.txt";
             string filename;
 
             Console.WriteLine("Which story would you like to use?");
             Console.WriteLine("For a short test: enter 1");
             Console.WriteLine("For a longer test: enter 2");
             Console.WriteLine("For a Spooky MadLib: enter 3");
+            Console.WriteLine("For opening lines to great novels: enter 4");
             
             string storyChoice = Console.ReadLine();
             if (storyChoice == "1")
             {
-                filename = "ShortTest.txt";
+                filename = testStory;
             }
             else if (storyChoice == "2")
             {
-                filename = "Test.txt";
+                filename = longerTest;
             }
             else if (storyChoice == "3")
             {
-                filename = "SpookyMadLib.txt";
+                filename = Spooky;
+            }
+            else if (storyChoice == "4")
+            {
+                filename = Open;
             }
             else
             {
-                filename = "Test.txt";
+                filename = testStory;
             }
 
             try

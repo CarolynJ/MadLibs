@@ -54,6 +54,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="OpeningLines.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="ShortTest.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

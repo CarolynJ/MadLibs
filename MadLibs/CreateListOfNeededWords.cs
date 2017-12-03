@@ -12,20 +12,28 @@ namespace MadLibs
         {
 
             Dictionary<string, Word> wordsNeeded = new Dictionary<string, Word>();
-            int keyNum = 0;
+            //int keyNum = 0;
             string[] pieces = storyInput.Split(' ');
             foreach (string word in pieces)
             {
                 if ((word.StartsWith("(")) && (word.EndsWith(")")))
                 {
-                    keyNum += 1;
-                    string parsePrompt = keyNum + word.Substring(1, word.Length - 2);
+                    // keyNum += 1;
+                    string parsePrompt = word.Substring(1, word.Length - 2);
                     ParsePrompt(parsePrompt, wordsNeeded);
+                    //int index = word.IndexOf(':');
+                    //index++;
+                    //string parsePrompt = word.Substring(index);
+                    //ParsePrompt(parsePrompt, wordsNeeded);
                 }
                 else if (word.StartsWith("("))
                 {
-                    keyNum += 1;
-                    string parsePrompt = keyNum+ word.Substring(1, word.Length - 3);
+                    //int index = word.IndexOf(':');
+                    //index++;
+                    //string parsePrompt = word.Substring(index, word.Length - 3);
+                    //ParsePrompt(parsePrompt, wordsNeeded);
+
+                    string parsePrompt = word.Substring(1, word.Length - 3);
                     ParsePrompt(parsePrompt, wordsNeeded);
                 }
             }

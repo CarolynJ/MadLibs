@@ -1,0 +1,32 @@
+“Many (1t:amountOfTime) later, as he (2v:verb) the firing squad, (3p:person) was to remember that (4p:proximity) (5t:timeOfDat) when his (6p:relation) took him to discover (7n:noun).” 
+Book: One Hundred Years of Solitude 
+Author: Gabriel García Márquez 
+
+Opener: “It was a (8f:feeling) to (9v:verbforFire).” 
+Book: Fahrenheit 451 
+Author: Ray Bradbury 
+
+“It was a (10w:typeWeather) (11w:tempratureDesripture) day in April, and the (12n:nounMakesNoise) were striking (12n:numberOvertwelve).” 
+Book: 1984 
+Author: George Orwell 
+
+ “As Gregor Samsa awoke one morning from uneasy dreams he found himself transformed in his bed into a monstrous vermin.” 
+ Book: Metamorphosis 
+ Author: Franz Kafka
+
+  “Mama died today. Or yesterday maybe, I don’t know.” 
+  Book: The Stranger 
+  Author: Albert Camus
+
+  “In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a hobbit-hole, and that means comfort.” 
+  Book: The Hobbit 
+  Author: J.R.R. Tolkien 
+
+
+  “You don’t know about me without you have read a book by the name of The Adventures of Tom Sawyer, but that ain’t no matter. That book was made by Mr. Mark Twain, and he told the truth, mainly.” 
+  Book: Adventures of Huckleberry Finn 
+  Author: Mark Twain 
+
+  “If you really want to hear about it, the first thing you’ll probably want to know is where I was born, and what my lousy childhood was like, and how my parents were occupied and all before they had me, and all that David Copperfield kind of crap, but I don’t feel like going into it, if you want to know the truth.” 
+  Book: The Catcher in the Rye 
+  Author: J.D. Salinger 
