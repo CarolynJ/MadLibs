@@ -1,4 +1,4 @@
-“Many (1t:amountOfTime) later, as he (2v:verb) the firing squad, (3p:person) was to remember that (4p:proximity) (5t:timeOfDat) when his (6p:relation) took him to discover (7n:noun).” 
+“Many (1t:amountOfTime) later, as he (2v:verb) the firing squad, (3p:person) was to remember that (4p:proximity) (5t:timeOfDay) when his (6p:relation) took him to discover (7n:noun).” 
 Book: One Hundred Years of Solitude 
 Author: Gabriel García Márquez 
 
