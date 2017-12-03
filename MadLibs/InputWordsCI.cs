@@ -17,7 +17,17 @@ namespace MadLibs
             {
                 string wordsprompt = Regex.Replace(word.Value.Prompt, "([A-Z])(?![A-Z])", " $1");
                 wordsprompt = wordsprompt.Substring(0, 1).ToUpper() + wordsprompt.Substring(1);
-               Console.WriteLine("Please enter a " + wordsprompt + ":");
+               // if (wordsprompt.StartsWith("a" ))
+                if (Regex.IsMatch(wordsprompt, "^(a|e|i|o|u)"))
+                {
+                    Console.WriteLine("Please enter an " + wordsprompt + ":");
+
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a " + wordsprompt + ":");
+                }
+               
                string newWord = Console.ReadLine();
                word.Value.Answer = newWord;
          
