@@ -16,9 +16,10 @@ namespace MadLibs
             foreach(KeyValuePair<string, Word> word in wordsNeeded)
             {
                 string wordsprompt = Regex.Replace(word.Value.Prompt, "([A-Z])(?![A-Z])", " $1");
+                //Console.WriteLine(wordsprompt);
                 wordsprompt = wordsprompt.Substring(0, 1).ToUpper() + wordsprompt.Substring(1);
                // if (wordsprompt.StartsWith("a" ))
-                if (Regex.IsMatch(wordsprompt, "^(a|e|i|o|u)"))
+                if (Regex.IsMatch(wordsprompt, "^(A|E|I|O|U)"))
                 {
                     Console.WriteLine("Please enter an " + wordsprompt + ":");
 
