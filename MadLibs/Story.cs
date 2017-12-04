@@ -25,7 +25,7 @@ namespace MadLibs
             }
             
             cleanCompleteStory = outputStory.Replace("(", "").Replace(")", "");
-            cleanCompleteStory = cleanCompleteStory.Replace("?", "\n");
+            cleanCompleteStory = cleanCompleteStory.Replace("[", "\n").Replace("]", "\n");
             Console.WriteLine();
             Console.WriteLine();
             Console.WriteLine();
